@@ -47,7 +47,7 @@ resource "azurerm_kubernetes_cluster" "aks_demo" {
   agent_pool_profile {
     name            = "default"
     count           = "${var.agent_count}"
-    vm_size         = "Standard_D2"
+    vm_size         = "Standard_D2v2"
     os_type         = "Linux"
     os_disk_size_gb = 30
   }
